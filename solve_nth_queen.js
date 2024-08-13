@@ -29,7 +29,6 @@ const solve =(row)=>{
         if(isSafe(row, col)){
             board[row][col] = "Q"
             if(solve(row + 1)) return true
-            board[row][col] = "-"
 
         }
         board[row][col] = "-"
