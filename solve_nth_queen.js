@@ -33,9 +33,6 @@ const solve =(row)=>{
 
         }
         board[row][col] = "-"
-
-
-        
     }
     return false
 
@@ -46,4 +43,4 @@ const solveNthQueen = (size) => {
     n = size
     solve(0)
 }
-solveNthQueen(4)
+solveNthQueen(6)
