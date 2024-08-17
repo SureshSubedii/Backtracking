@@ -6,9 +6,11 @@
 
 const combinationSum2 = (candidates, target)=> {
     let combinations = []
+    candidates.sort()
      const backtrack = (start, path , target) =>{
         if(target === 0){
             combinations.push([...path])
+            return
         }
         if(target < 0) return
 
