@@ -13,7 +13,6 @@ var readBinaryWatch = function(num) {
     return times;
   };
 
-  console.log(readBinaryWatch(3))
 
 // Using DFS 
   var readBinaryWatch = function (turnedOn) {
