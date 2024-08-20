@@ -16,7 +16,6 @@ var readBinaryWatch = function(num) {
 
 // Using DFS 
   var readBinaryWatch = function (turnedOn) {
-    const leds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     const digits = {
         '0': [0, 1],
         '1': [0, 2],
@@ -45,7 +44,7 @@ var readBinaryWatch = function(num) {
             return;
         }
 
-        for (let i = root; i < leds.length; i++) {
+        for (let i = root; i < 10; i++) {
             dfs(i + 1, [...path, digits[i]]);
         }
     };
