@@ -17,7 +17,6 @@ var restoreIpAddresses = function(s) {
             }
             return;
         }
-
         for (let i = start; i < s.length && i < start + 3; i++) {
             let segment = s.slice(start, i + 1);
             console.log(segment)
@@ -30,7 +29,6 @@ var restoreIpAddresses = function(s) {
             }
         }
     };
-
     backtrack([], 0);
     return result;
 };
