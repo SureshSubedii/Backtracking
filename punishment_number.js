@@ -30,14 +30,12 @@ var punishmentNumber = function(n) {
 
     for(let i = 1; i <= n; i ++){
             let squared = i ** 2
-            if(Number.isInteger(Math.log10(i))) {
-                result += squared
-                continue
-            }
+            if( ((i % 9) === 1) || ( i % 9) === 0 ) {
             backtrack([], 0, String(squared), String(i))
             digitsSum = 0
+            }
 
     }
-    return result
+    return result + 1
     
 };
